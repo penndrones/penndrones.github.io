@@ -1,0 +1,7 @@
+.scrollpoint {
+	opacity:0;
+}
+
+.scrollpoint.active {
+	opacity:1;
+}

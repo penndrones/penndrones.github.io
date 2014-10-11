@@ -16,6 +16,8 @@
 
     <!-- Custom CSS -->
     <link href="css/penndronesCSS.css" rel="stylesheet">
+    <link href="css/animate.css" rel="stylesheet" type="text/css">
+    <link href="css/customAnimate.css" rel="stylesheet" type="text/css">
 
     <!-- Custom Fonts -->
     <link href="font-awesome-4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
@@ -41,7 +43,7 @@
                     <i class="fa fa-bars"></i>
                 </button>
                 <a class="navbar-brand page-scroll" href="#page-top">
-                    <i class="fa fa-play-circle"></i>  <span class="light">Penn</span> Drones
+                    <i class="fa fa-plane"></i>  <span class="light">Penn</span> Drones
                 </a>
             </div>
 
@@ -72,13 +74,23 @@
     <header class="intro">
         <div class="intro-body">
             <div class="container">
+                <!--<video preload autoplay="true" muted="false" loop="true" id="video">
+                    <source src="My%20Movie3.mp4" type="video/mp4">
+
+                </video>-->
                 <div class="row">
+                    
                     <div class="col-md-8 col-md-offset-2">
                         <h1 class="brand-heading">PENN DRONES</h1>
-                        <p class="intro-text">A Student-Run Club for Building Unmanned Flying Vehicles at the University of Pennsylvania.</p>
+                        <p class="intro-text">A Student-Run Club for Building Unmanned Flying Vehicles at the University of Pennsylvania. <br><a class="intro-text" href="http://youtu.be/yCefSkDjVHc">Check out our footage over the Quad!</a></p>
+                        
+                        <!--<h1> <br><br><br><br><br><br><br><br></h1>-->
                         <a href="#about" class="btn btn-circle page-scroll">
                             <i class="fa fa-angle-double-down animated"></i>
                         </a>
+                        <!--<a class="btn btn-circle" id="mutePress">
+                            <i class="fa fa-volume-up animated" id="mutePress2"></i>
+                        </a>-->
                     </div>
                 </div>
             </div>
@@ -92,7 +104,7 @@
     <!-- About Section -->
     <section class="container content-section text-center">
         <div class="row">
-            <div class="col-lg-8 col-lg-offset-2">
+            <div class="col-lg-8 col-lg-offset-2 scrollpoint sp-effect3">
                 <p>Penn Drones is a club at the University of Pennsylvania designed to give students the opportunity to design and build unmanned flying vehicles, such as drones, quadrotors, fixed-wing aircrafts, etc.  </p>
                 <p>The goal of the club is to help students develop knowledge of aeronautics and robotics while engaging in fun and hands-on projects.  </p>
                 <p>Materials will be provided to all members, and no prior knowledge is required.  
@@ -114,7 +126,7 @@
     <section class="content-section text-center">
         <div class="download-section">
             <div class="container">
-                <div class="col-lg-8 col-lg-offset-2">
+                <div class="col-lg-8 col-lg-offset-2 scrollpoint sp-effect3">
                     <p>We are considering various projects, such as quadrotors and other fixed-wing aircrafts.  We are also considering amphibious vehicles.  </p>
                     
                 </div>
@@ -129,7 +141,7 @@
     <!-- Contact Section -->
     <section class="container content-section text-center">
         <div class="row">
-            <div class="col-lg-8 col-lg-offset-2">
+            <div class="col-lg-8 col-lg-offset-2 scrollpoint sp-effect3">
                 <p>Questions or Concerns?  Reach out to us via the Facebook Group or by Email.  </p>
                 </p>
                 <ul class="list-inline banner-social-buttons">
@@ -159,6 +171,21 @@
 
     <!-- Plugin JavaScript -->
     <script src="js/jquery.easing.min.js"></script>
+    
+    <!--<script>
+        $("#mutePress").click(function(e) {
+            if( $("video").prop('muted') )
+            {
+                $("video").prop('muted', false);
+            }
+
+            else {
+                $("video").prop('muted', true);
+            }
+            $("#mutePress2").toggleClass("fa-volume-up");
+            $("#mutePress2").toggleClass("fa-volume-off");
+    });
+    </script>-->
 
     <!-- Google Maps API Key - Use your own API key to enable the map feature. More information on the Google Maps API can be found at https://developers.google.com/maps/ -->
     <!--<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCRngKslUGJTlibkQ3FkfTxj3Xss1UlZDA&sensor=false"></script>-->
@@ -176,6 +203,8 @@
 
     <!-- Custom Theme JavaScript -->
     <script src="js/grayscale.js"></script>
+    <script src="js/custom.js"></script>
+    <script src="js/waypoints.min.js"></script>
 
 </body>
 

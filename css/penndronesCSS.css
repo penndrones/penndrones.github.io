@@ -258,6 +258,15 @@ a:focus {
     -o-background-size: cover;
 }
 
+video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-width: 400px;
+    object-fit: contain;
+}
+
 section {
   color: #ffffff;
   min-height: 400px;
