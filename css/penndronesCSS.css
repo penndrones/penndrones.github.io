@@ -13,15 +13,67 @@ html {
 
 h1,
 h2,
-h3,
-h4,
-h5,
 h6 {
     margin: 0 0 35px;
     text-transform: uppercase;
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
     font-weight: 700;
     letter-spacing: 1px;
+}
+
+h3 {
+    font-family:Artial, Verdana, sans-serif;
+	color:#fff;
+	font-size:100px;
+	margin:1em 0;
+    font-weight: 700;
+}
+
+h4 {
+    font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    color:rgba(255, 255, 255, 0.5);
+    font-size:50px;
+    margin:1em 0;
+    
+    -webkit-animation-name: blinker;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+
+    -moz-animation-name: blinker;
+    -moz-animation-duration: 1s;
+    -moz-animation-timing-function: linear;
+    -moz-animation-iteration-count: infinite;
+
+    animation-name: blinker;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+h5 {
+    font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	color:#fff;
+	font-size:30px;
+	margin:1em 0;
+}
+
+@-moz-keyframes blinker {  
+    0% { opacity: 1.0; }
+    50% { opacity: 0.2; }
+    100% { opacity: 1.0; }
+}
+
+@-webkit-keyframes blinker {  
+    0% { opacity: 1.0; }
+    50% { opacity: 0.2; }
+    100% { opacity: 1.0; }
+}
+
+@keyframes blinker {  
+    0% { opacity: 1.0; }
+    50% { opacity: 0.2; }
+    100% { opacity: 1.0; }
 }
 
 p {
@@ -132,7 +184,7 @@ a:focus {
     padding: 100px 0;
     text-align: center;
     color: #fff;
-    background: url(../img/start2.jpg) no-repeat top center scroll;
+    /*background: url(../img/start2.jpg) no-repeat top center scroll;*/
     background-color: #000;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -297,6 +349,14 @@ section {
 
 .bg-3 {
 	background: url('../img/benFranklinPhoto.JPG') no-repeat center center fixed; 
+    -webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+  	background-size: cover;
+}
+
+.bg-4 {
+	background: url('../img/start.JPG') no-repeat center center fixed; 
     -webkit-background-size: cover;
   	-moz-background-size: cover;
   	-o-background-size: cover;

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="skrollr skrollr-desktop">
 
 <head>
 
@@ -8,6 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="This is the website for Penn Drones, a student-run club for building unmanned flying vehicles at the University of Pennsylvania.">
     <meta name="author" content="Penn Drones Executives">
+    <link rel="shortcut icon" href="img/PennDronesShortcutIcon.png">
 
     <title>Penn Drones</title>
     <meta property="og:title" content="PENN DRONES" />
@@ -19,9 +20,15 @@
     <link href="css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css" />
     <link href="css/penndronesCSS.css" rel="stylesheet">
     <link href="css/animate.css" rel="stylesheet" type="text/css">
     <link href="css/customAnimate.css" rel="stylesheet" type="text/css">
+    
+    <link href="css/fixed-positioning.css" rel="stylesheet" type="text/css">
+	<link href="css/main.css" rel="stylesheet" type="text/css">
+    
+    <link rel="stylesheet" href="css/jquery.flipster.css">
 
     <!-- Custom Fonts -->
     <link href="font-awesome-4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
@@ -39,6 +46,19 @@
 
 <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
 
+    <div class="loader-wrap">
+        <div class="loader">
+            <div class="box-1 box"></div>
+            <div class="box-2 box"></div>
+            <div class="box-3 box"></div>
+            <div class="pennLogo box">
+                <img src="img/PennLogo2.jpg">
+            </div>
+            <div class="box-4 box"></div>
+            <div class="box-5 box"></div>
+            <div class="box-6 box"></div>
+        </div>
+    </div>
     <!-- Navigation -->
     <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
         <div class="container">
@@ -65,6 +85,9 @@
                         <a class="page-scroll" href="#download">Projects</a>
                     </li>
                     <li>
+                        <a class="page-scroll" href="#videos">Gallery</a>
+                    </li>
+                    <li>
                         <a class="page-scroll" href="#contact">Contact</a>
                     </li>
                 </ul>
@@ -74,32 +97,75 @@
         <!-- /.container -->
     </nav>
 
+    <div>
+    <div id="bg3" data-0="background-position:50% 50%;transform:scale(0.01)" data-500="background-position:50% 50%;transform:scale(0.01)" data-1500="background-position:0% 85%;transform:scale(0.1)" data-5000="background-position:0% 85%;transform:scale(50)" data-5001="background-position:0% 85%;transform:scale(0)" class="skrollable skrollable-between" style="background-position: 0px 0px;"></div>
+        <!--CHANGE-->
+    <div id="bg4" data-0="background-position:50% 50%;transform:scale(0.01)" data-500="background-position:50% 50%;transform:scale(0.01)" data-1500="background-position:100% 85%;transform:scale(0.1)" data-5000="background-position:100% 85%;transform:scale(50)" data-5001="background-position:100% 85%;transform:scale(0)" class="skrollable skrollable-between" style="background-position: 0px 0px;"></div>
+        <!--CHANGE-->
+    <div id="bg5" data-0="background-position:50% 50%;transform:scale(0.01)" data-500="background-position:50% 50%;transform:scale(0.01)" data-1500="background-position:0% 5%;transform:scale(0.1)" data-5000="background-position:0% 5%;transform:scale(50)" data-5001="background-position:0% 5%;transform:scale(0)" class="skrollable skrollable-between" style="background-position: 0px 0px;"></div>
+        <!--CHANGE-->
+    <div id="bg6" data-0="background-position:50% 50%;transform:scale(0.01)" data-500="background-position:50% 50%;transform:scale(0.01)" data-1500="background-position:100% 5%;transform:scale(0.1)" data-5000="background-position:100% 5%;transform:scale(50)" data-5001="background-position:100% 5%;transform:scale(0)" class="skrollable skrollable-between" style="background-position: 0px 0px;"></div>
+    
+        <!--CHANGE-->
+    <div id="bg4" data-0="background-position:50% 50%;transform:scale(0.01)" data-1000="background-position:50% 50%;transform:scale(0.01)" data-2000="background-position:100% 85%;transform:scale(0.1)" data-5000="background-position:100% 85%;transform:scale(50)" data-5001="background-position:100% 85%;transform:scale(0)" class="skrollable skrollable-between" style="background-position: 0px 0px;"></div>
+        <!--CHANGE-->
+    <div id="bg3" data-0="background-position:50% 50%;transform:scale(0.01)" data-1000="background-position:50% 50%;transform:scale(0.01)" data-2000="background-position:0% 85%;transform:scale(0.1)" data-5000="background-position:0% 85%;transform:scale(50)" data-5001="background-position:0% 85%;transform:scale(0)" class="skrollable skrollable-between" style="background-position: 0px 0px;"></div>
+        <!--CHANGE-->
+    <div id="bg6" data-0="background-position:50% 50%;transform:scale(0.01)" data-1000="background-position:50% 50%;transform:scale(0.01)" data-2000="background-position:100% 5%;transform:scale(0.1)" data-5000="background-position:100% 5%;transform:scale(50)" data-5001="background-position:100% 5%;transform:scale(0)" class="skrollable skrollable-between" style="background-position: 0px 0px;"></div>
+        <!--CHANGE-->
+    <div id="bg5" data-0="background-position:50% 50%;transform:scale(0.01)" data-1000="background-position:50% 50%;transform:scale(0.01)" data-2000="background-position:0% 5%;transform:scale(0.1)" data-5000="background-position:0% 5%;transform:scale(50)" data-5001="background-position:0% 5%;transform:scale(0)" class="skrollable skrollable-between" style="background-position: 0px 0px;"></div>
+    
+        <!--CHANGE-->
+    <div id="bg2" data-0="background-position:50% 50%;transform:scale(0.01)" data-500="background-position:50% 50%;transform:scale(0.01)" data-1500="background-position:50% 0%;transform:scale(0.1)" data-5000="background-position:50% 0%;transform:scale(50)" data-5001="background-position:50% 0%;transform:scale(0)" class="skrollable skrollable-between" style="background-position: 0px 0px;"></div>
+        <!--CHANGE-->
+    <div id="bg1" data-0="background-position:50% 50%;transform:scale(0.01)" data-500="background-position:50% 50%;transform:scale(0.01)" data-1500="background-position:50% 100%;transform:scale(0.1)" data-5000="background-position:50% 100%;transform:scale(50)" data-5001="background-position:50% 100%;transform:scale(0)" class="skrollable skrollable-between" style="background-position: 0px 0px;"></div>
+        <!--CHANGE-->
+    <div id="bg2" data-0="background-position:50% 50%;transform:scale(0.01)" data-1000="background-position:50% 50%;transform:scale(0.01)" data-2000="background-position:50% 0%;transform:scale(0.1)" data-5000="background-position:50% 0%;transform:scale(50)" data-5001="background-position:50% 0%;transform:scale(0)" class="skrollable skrollable-between" style="background-position: 0px 0px;"></div>
+        <!--CHANGE-->
+    <div id="bg1" data-0="background-position:50% 50%;transform:scale(0.01)" data-1000="background-position:50% 50%;transform:scale(0.01)" data-2000="background-position:50% 100%;transform:scale(0.1)" data-5000="background-position:50% 100%;transform:scale(50)" data-5001="background-position:50% 100%;transform:scale(0)" class="skrollable skrollable-between" style="background-position: 0px 0px;"></div>
+    
+    <!--CHANGE-->
+    <div id="bg7" data-0="background-position:50% 50%;transform:scale(0.01)" data-2000="background-position:50% 50%;transform:scale(0.01)" data-4000="background-position:50% 70%;transform:scale(1);opacity:1" data-4999="background-position:50% 50%;transform:scale(2);opacity:0" data-5000="background-position:-5000px -5000px;transform:scale(50);opacity:0" data-5001="background-position:-5000px -5000px;transform:scale(0);opacity:0" class="skrollable skrollable-between" style="background-position: 0px 0px;"></div>
+    
+        <!--CHANGE-->
+    <div id="cloud" data-0="background-position:0% 0%;transform:scale(1);" data-5000="background-position:100% 100%;transform:scale(1)" data-5001="background-position:-5000px -5000px;transform:scale(0)" class="skrollable skrollable-between" style="background-position: 0px 0px;"></div>
+    
+    <div id="cloud2" data-0="background-position:0% 400px;transform:scale(1);" data-2000="background-position:0% -1000px;transform:scale(1);" data-5001="background-position:0% -1000px;transform:scale(0)" class="skrollable skrollable-between" style="background-position: 0px 0px;"></div>
+        
+    <div id="cloud2" data-0="background-position:100% 400px;transform:scale(1);" data-2000="background-position:100% -1000px;transform:scale(1);" data-5001="background-position:100% -1000px;transform:scale(0)" class="skrollable skrollable-between" style="background-position: 0px 0px;"></div>
+    
+    <div id="cloud3" data-0="background-position:0% 200px;transform:scale(1);" data-2000="background-position:0% -1000px;transform:scale(1);" data-5001="background-position:0% -1000px;transform:scale(0)" class="skrollable skrollable-between" style="background-position: 0px 0px;"></div>
+    <div id="cloud3" data-0="background-position:100% 200px;transform:scale(1);" data-2000="background-position:100% -1000px;transform:scale(1);" data-5001="background-position:100% -1000px;transform:scale(0)" class="skrollable skrollable-between" style="background-position: 0px 0px;"></div>
+    
+        <!--CHANGE-->
+    <div id="stars" data-0="background-position:50% 50%;transform:scale(1);" data-5000="background-position:50% 50%;transform:scale(1);" data-5001="background-position:-5000px -5000px;transform:scale(0)" class="skrollable skrollable-between" style="background-position: 0px 0px;"></div>
+
+	<!--<div id="progress" data-0="width:0%;background:hsl(200, 100%, 50%);" data-end="width:100%;background:hsl(920, 100%, 50%);" class="skrollable skrollable-between" style="width: 0%; background: rgb(0, 170, 255);"></div>-->
+        
+        <div id="progress" data-0="width:0%;background:hsl(200, 100%, 50%);" data-5000="width:100%;background:hsl(920, 100%, 50%);" data-5001="width:0%;background:hsl(920, 100%, 50%);" class="skrollable skrollable-between" style="width: 0%; background: rgb(0, 170, 255);"></div>
+    
+    
+    <div id="title" data-0="top:0%;transform:scale(1) rotate(0deg); opacity:1" data-1000="top:20%;transform:scale(1) rotate(0deg); opacity:1"data-4200="transform:scale(1) rotate(0deg);opacity:1;" data-4500="transform:scale(3) rotate(720deg);opacity:0;" data-end="transform:scale(0) rotate(3240deg);opacity:0;" style="top: 100%;-webkit-transform: scale(0) rotate(0deg); transform: scale(0) rotate(0deg); opacity: 1;">
+		<h3>PENN DRONES</h3>
+	</div>
+        
+        <div id="title" data-0="top:60%;transform:scale(1) rotate(0deg); opacity:1" data-250="top:60%;transform:scale(1) rotate(0deg); opacity:1" data-500="top:60%;transform:scale(1) rotate(0deg); opacity:0" data-5000="top:60%;transform:scale(0) rotate(0deg); opacity:0" data-end="transform:scale(0) rotate(0deg);opacity:0;" style="top: 100%;-webkit-transform: scale(0) rotate(0deg); transform: scale(0) rotate(0deg); opacity: 1;">
+		<h4>Scroll Down to Enter</h4>
+	</div>
+        
+        <div id="title" data-0="top:50%;transform:scale(1) rotate(0deg); opacity:0" data-500="top:50%;transform:scale(1) rotate(0deg); opacity:0" data-501="top:50%;transform:scale(1) rotate(0deg); opacity:1" data-4000="top:50%;transform:scale(1) rotate(0deg); opacity:1" data-5000="top:60%;transform:scale(0) rotate(0deg); opacity:0" data-end="transform:scale(0) rotate(0deg);opacity:0;" style="top: 100%;-webkit-transform: scale(0) rotate(0deg); transform: scale(0) rotate(0deg); opacity: 1;">
+		<h5>A Student-Run Club for Building Unmanned Flying Vehicles at the University of Pennsylvania.</h5>
+	</div>
+        
+        </div>
+
     <!-- Intro Header -->
     <header class="intro">
-        <div class="intro-body">
-            <div class="container">
-                <!--<video preload autoplay="true" muted="false" loop="true" id="video">
-                    <source src="My%20Movie3.mp4" type="video/mp4">
 
-                </video>-->
-                <div class="row">
-                    
-                    <div class="col-md-8 col-md-offset-2">
-                        <h1 class="brand-heading">PENN DRONES</h1>
-                        <p class="intro-text">A Student-Run Club for Building Unmanned Flying Vehicles at the University of Pennsylvania. <br><a class="intro-text" href="http://youtu.be/yCefSkDjVHc">Check out our footage over the Quad!</a></p>
-                        
-                        <!--<h1> <br><br><br><br><br><br><br><br></h1>-->
-                        <a href="#about" class="btn btn-circle page-scroll">
-                            <i class="fa fa-angle-double-down animated"></i>
-                        </a>
-                        <!--<a class="btn btn-circle" id="mutePress">
+    </header>
+    <!--<a class="btn btn-circle" id="mutePress">
                             <i class="fa fa-volume-up animated" id="mutePress2"></i>
                         </a>-->
-                    </div>
-                </div>
-            </div>
-        </div>
-    </header>
     
     <section class="bg-2" id="about" >
   <div class="col-sm-6 col-sm-offset-3 text-center"><h2 style="padding:20px;background-color:rgba(5,5,5,.8)">About</h2></div>
@@ -117,7 +183,7 @@
                 <h2>Executives</h2>
                     <p>Kunal Malhotra - President and Founder</p>
                     <p>Spiro Metaxas - Administrator</p>
-                    <p>Treasurer - T.B.D.</p>
+                    <p>Emily Zanker - Treasurer</p>
             </div>
         </div>
     </section>
@@ -139,6 +205,42 @@
                     
                 </div>
             </div>
+        </div>
+    </section>
+    
+    <section class="bg-4" id="videos" >
+  <div class="col-sm-6 col-sm-offset-3 text-center"><h2 style="padding:20px;background-color:rgba(5,5,5,.8)">Gallery</h2></div>
+</section>
+    
+    <section class="content-section2 text-center">
+        <div class="download-section">
+            <div id="Main-Content">
+	<div class="Container">
+		<div class="flipster">
+		  <ul>
+		  	<li>
+		  		<iframe width="500" height="300" src="http://www.youtube.com/embed/yCefSkDjVHc" frameborder="0" allowfullscreen></iframe>
+		  	</li>
+              <li>
+		  		<img src="img/ParrotARDrone.jpg">
+		  	</li>
+              <li>
+		  		<img src="img/RCHelicopter.jpg">
+		  	</li>
+              <li>
+		  		<img src="img/BuiltAircraft2.jpg">
+		  	</li>
+              <li>
+		  		<img src="img/ParrotARDrone2.jpg">
+		  	</li>
+		  </ul>
+		</div>
+
+	</div>
+</div>
+        </div>
+        <div>
+            <p>Navigate with arrow keys or mousewheel, depending on browser.</p>
         </div>
     </section>
     
@@ -167,7 +269,7 @@
     <!-- Footer -->
     <footer>
         <div class="container text-center">
-            <p>Copyright &copy; Penn Drones 2014</p>
+            <p>Copyright &copy; Penn Drones 2015</p>
         </div>
     </footer>
 
@@ -179,6 +281,37 @@
 
     <!-- Plugin JavaScript -->
     <script src="js/jquery.easing.min.js"></script>
+    
+    <script type="text/javascript">
+        $(window).load(function() {
+            $(".loader-wrap").delay(2000).fadeOut("slow");
+        })
+    </script>
+    
+    <script type="text/javascript" src="js/skrollr.min.js"></script>
+    
+    <script type="text/javascript">
+	var s = skrollr.init({
+		edgeStrategy: 'set',
+		easing: {
+			WTF: Math.random,
+			inverted: function(p) {
+				return 1-p;
+			}
+		}
+	});
+	</script>
+    
+    <script>
+
+	$(function(){ 
+		$(".flipster").flipster({
+			style: 'carousel',
+            enableNavButtons:true,
+		});
+	});
+
+</script>
     
     <!--<script>
         $("#mutePress").click(function(e) {
@@ -194,11 +327,8 @@
             $("#mutePress2").toggleClass("fa-volume-off");
     });
     </script>-->
-
-    <!-- Google Maps API Key - Use your own API key to enable the map feature. More information on the Google Maps API can be found at https://developers.google.com/maps/ -->
-    <!--<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCRngKslUGJTlibkQ3FkfTxj3Xss1UlZDA&sensor=false"></script>-->
     
-    <script>
+    <!--<script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
   m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
@@ -207,12 +337,13 @@
   ga('create', 'UA-55588813-1', 'auto');
   ga('send', 'pageview');
 
-</script>
+</script>-->
 
     <!-- Custom Theme JavaScript -->
     <script src="js/grayscale.js"></script>
     <script src="js/custom.js"></script>
     <script src="js/waypoints.min.js"></script>
+    <script src="js/jquery.flipster.js"></script>
 
 </body>
 
