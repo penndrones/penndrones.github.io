@@ -21,13 +21,26 @@ h6 {
     letter-spacing: 1px;
 }
 
-h3 {
-    font-family:Artial, Verdana, sans-serif;
-	color:#fff;
-	font-size:100px;
-	/*margin:1em 0;*/
-    margin:0 0;
-    font-weight: 700;
+@media(min-width:1200px) {
+    h3 {
+        font-family:Artial, Verdana, sans-serif;
+        color:#fff;
+        font-size:100px;
+        /*margin:1em 0;*/
+        margin:0 0;
+        font-weight: 700;
+    }
+}
+
+@media(max-width:1199px) {
+    h3 {
+        font-family:Artial, Verdana, sans-serif;
+        color:#fff;
+        font-size:80px;
+        /*margin:1em 0;*/
+        margin:0 0;
+        font-weight: 700;
+    }
 }
 
 h4 {
