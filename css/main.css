@@ -47,7 +47,7 @@ body {
 
 .skrollr-desktop #scrollbar {display:none;}
 
-#bg1, #bg2, #bg3, #bg4, #bg5, #bg6, #bg7, #cloud2, #cloud3 {
+#bg1, #bg2, #bg3, #bg4, #bg5, #bg6, #bg7, #cloud2, #cloud3, #cloud4 {
 	z-index:50;
 	top:0;
 	left:0;
@@ -104,6 +104,26 @@ body {
     z-index:59;
     background-image:url(../img/clouds4.png);
 }
+
+@media(min-height:750px) {
+    #cloud4 {
+        z-index:61;
+        background-image:url(../img/clouds2.png);
+    }
+}
+
+@media(max-height:749px) {
+    #cloud4 {
+        z-index:61;
+        background-image:url(../img/placeHolder.png);
+    }
+}
+
+
+/*#cloud4 {
+        z-index:61;
+        background-image:url(../img/clouds2.png);
+    }*/
 
 #stars {
     z-index:39;
