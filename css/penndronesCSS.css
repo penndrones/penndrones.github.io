@@ -206,18 +206,35 @@ a:focus {
     -o-background-size: cover;
 }
 
-.intro .intro-body {
+.intro2 {
+    display: table;
+    width: 100%;
+    height: auto;
+    padding: 100px 0;
+    text-align: center;
+    color: #fff;
+    background: url(../img/start2.jpg) no-repeat top center scroll;
+    background-color: #000;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+.intro2 .intro-body {
     display: table-cell;
     vertical-align: middle;
 }
 
-.intro .intro-body .brand-heading {
-    font-size: 40px;
+.intro2 .intro-body .brand-heading {
+    padding:50px 0;
+    font-size: 70px;
 }
 
-.intro .intro-body .intro-text {
+.intro2 .intro-body .intro-text {
     font-size: 18px;
 }
+
 
 @media(min-width:767px) {
     .intro {

@@ -83,21 +83,45 @@ body{
 	-moz-animation: sideLoader 1s infinite linear;
 	animation: sideLoader 1s infinite linear;
 }
-.pennLogo {
-    /*content:url(../img/PennLogo2.jpg);*/
-    /*margin-left:auto;
-    margin-right:auto;*/
-    /*margin-top:auto;
-    margin-bottom:auto;*/
-    margin-left:50px;
-    margin-right:50px;
-    display:inline-block;
-    
-    -webkit-animation: loader 1s infinite linear;
-	-moz-animation: loader 1s infinite linear;
-	animation: loader 1s infinite linear;
-    
+
+@media(min-width:992px) {
+    .pennLogo {
+        /*content:url(../img/PennLogo2.jpg);*/
+        /*margin-left:auto;
+        margin-right:auto;*/
+        /*margin-top:auto;
+        margin-bottom:auto;*/
+        margin-left:50px;
+        margin-right:50px;
+        display:inline-block;
+
+        -webkit-animation: loader 1s infinite linear;
+        -moz-animation: loader 1s infinite linear;
+        animation: loader 1s infinite linear;
+
+    }
 }
+
+@media(max-width:992px){
+    .pennLogo {
+        /*content:url(../img/PennLogo2.jpg);*/
+        /*margin-left:auto;
+        margin-right:auto;*/
+        /*margin-top:auto;
+        margin-bottom:auto;*/
+        /*left: 0; right:0;*/
+        margin-left:100px;
+        margin-right:auto;
+        display:inline-block;
+        
+        -webkit-animation: loader 1s infinite linear;
+        -moz-animation: loader 1s infinite linear;
+        animation: loader 1s infinite linear;
+
+    }
+}
+
+
 /*[class*='box-']:last-child{
 	margin-right: 0;
 }*/

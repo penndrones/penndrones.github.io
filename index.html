@@ -48,15 +48,18 @@
 
     <div class="loader-wrap">
         <div class="loader">
-            <div class="box-1 box"></div>
-            <div class="box-2 box"></div>
-            <div class="box-3 box"></div>
-            <div class="pennLogo box">
+            <div class="box-1 box hidden-sm hidden-xs"></div>
+            <div class="box-2 box hidden-sm hidden-xs"></div>
+            <div class="box-3 box hidden-sm hidden-xs"></div>
+            <div class="pennLogo box hidden-sm hidden-xs">
                 <img src="img/PennLogo2.jpg">
             </div>
-            <div class="box-4 box"></div>
-            <div class="box-5 box"></div>
-            <div class="box-6 box"></div>
+            <div class="pennLogo hidden-md hidden-lg">
+                <img src="img/PennLogo2.jpg">
+            </div>
+            <div class="box-4 box hidden-sm hidden-xs"></div>
+            <div class="box-5 box hidden-sm hidden-xs"></div>
+            <div class="box-6 box hidden-sm hidden-xs"></div>
         </div>
     </div>
     <!-- Navigation -->
@@ -97,7 +100,7 @@
         <!-- /.container -->
     </nav>
 
-    <div>
+    <div class="hidden-sm hidden-xs">
     <div id="bg3" data-0="background-position:50% 50%;transform:scale(0.01)" data-500="background-position:50% 50%;transform:scale(0.01)" data-1500="background-position:0% 85%;transform:scale(0.1)" data-5000="background-position:0% 85%;transform:scale(50)" data-5001="background-position:0% 85%;transform:scale(0)" class="skrollable skrollable-between" style="background-position: 0px 0px;"></div>
         <!--CHANGE-->
     <div id="bg4" data-0="background-position:50% 50%;transform:scale(0.01)" data-500="background-position:50% 50%;transform:scale(0.01)" data-1500="background-position:100% 85%;transform:scale(0.1)" data-5000="background-position:100% 85%;transform:scale(50)" data-5001="background-position:100% 85%;transform:scale(0)" class="skrollable skrollable-between" style="background-position: 0px 0px;"></div>
@@ -143,6 +146,7 @@
         
     <div id="cloud3" data-0="background-position:100% 200px;transform:scale(1);" data-2000="background-position:100% -1000px;transform:scale(1);" data-5001="background-position:100% -1000px;transform:scale(0)" class="skrollable skrollable-between" style="background-position: 0px 0px;"></div>
         
+        
         <!-- 3rd Row -->
         <div id="cloud4" data-0="background-position:0% 600px;transform:scale(1);" data-2000="background-position:0% -1000px;transform:scale(1);" data-5001="background-position:0% -1000px;transform:scale(0)" class="skrollable skrollable-between" style="background-position: 0px 0px;"></div>
         <div id="cloud4" data-0="background-position:50% 600px;transform:scale(1);" data-2000="background-position:50% -1000px;transform:scale(1);" data-5001="background-position:50% -1000px;transform:scale(0)" class="skrollable skrollable-between" style="background-position: 0px 0px;"></div>
@@ -172,8 +176,34 @@
         </div>
 
     <!-- Intro Header -->
-    <header class="intro">
+    <header class="intro hidden-sm hidden-xs">
 
+    </header>
+    
+    <header class="intro2 hidden-md hidden-lg">
+        <div class="intro-body">
+            <div class="container">
+                <!--<video preload autoplay="true" muted="false" loop="true" id="video">
+                    <source src="My%20Movie3.mp4" type="video/mp4">
+
+                </video>-->
+                <div class="row">
+                    
+                    <div class="col-md-8 col-md-offset-2">
+                        <h1 class="brand-heading">PENN DRONES</h1>
+                        <p class="intro-text">A Student-Run Club for Building Unmanned Flying Vehicles at the University of Pennsylvania. <br><a class="intro-text" href="http://youtu.be/yCefSkDjVHc">Check out our footage over the Quad!</a></p>
+                        
+                        <!--<h1> <br><br><br><br><br><br><br><br></h1>-->
+                        <a href="#about" class="btn btn-circle page-scroll">
+                            <i class="fa fa-angle-double-down animated"></i>
+                        </a>
+                        <!--<a class="btn btn-circle" id="mutePress">
+                            <i class="fa fa-volume-up animated" id="mutePress2"></i>
+                        </a>-->
+                    </div>
+                </div>
+            </div>
+        </div>
     </header>
     <!--<a class="btn btn-circle" id="mutePress">
                             <i class="fa fa-volume-up animated" id="mutePress2"></i>
@@ -184,9 +214,25 @@
 </section>
 
     <!-- About Section -->
-    <section class="container content-section text-center">
+    <section class="container content-section text-center  hidden-sm hidden-xs">
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2 scrollpoint sp-effect3">
+                <p>Penn Drones is a club at the University of Pennsylvania designed to give students the opportunity to design and build unmanned flying vehicles, such as drones, quadrotors, fixed-wing aircrafts, etc.  </p>
+                <p>The goal of the club is to help students develop knowledge of aeronautics, programming, and robotics while engaging in fun and hands-on projects.  </p>
+                <p>Materials will be provided to all members, and no prior knowledge is required.  
+                </p>
+                
+                <h2>Executives</h2>
+                    <p>Kunal Malhotra - President and Founder</p>
+                    <p>Spiro Metaxas - Administrator</p>
+                    <p>Emily Zanker - Treasurer</p>
+            </div>
+        </div>
+    </section>
+    
+    <section class="container content-section text-center  hidden-md hidden-lg">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2">
                 <p>Penn Drones is a club at the University of Pennsylvania designed to give students the opportunity to design and build unmanned flying vehicles, such as drones, quadrotors, fixed-wing aircrafts, etc.  </p>
                 <p>The goal of the club is to help students develop knowledge of aeronautics, programming, and robotics while engaging in fun and hands-on projects.  </p>
                 <p>Materials will be provided to all members, and no prior knowledge is required.  
@@ -205,10 +251,25 @@
 </section>
 
     <!-- Download Section -->
-    <section class="content-section2 text-center">
+    <section class="content-section2 text-center hidden-sm hidden-xs">
         <div class="download-section">
             <div class="container">
                 <div class="col-lg-8 col-lg-offset-2 scrollpoint sp-effect3">
+                    <p>We are considering various projects, such as quadrotors and other fixed-wing aircrafts.  We are also considering amphibious vehicles.  </p>
+                    <hr class="featurette-divider">
+                    <h2>First Project - Programming an <a href="http://ardrone2.parrot.com/">AR Drone 2.0</a></h2>
+                    <img src="img/ARDrone2.0-image.jpg" class="img-responsive" alt="AR DRone 2.0">
+                    <p>For this project, we will work with a <a href="http://vsis-www.informatik.uni-hamburg.de/oldServer/teaching//projects/yadrone/">YADrone</a> java library to write a program that controls an AR Drone 2.0.  Our goals are to use the drone's camera to implement features such as object detection, face recognition, etc.  The drone's flight pattern would be modified as a result of the camera's view.  No prior experience is necessary. </p>
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="content-section2 text-center hidden-md hidden-lg">
+        <div class="download-section">
+            <div class="container">
+                <div class="col-lg-8 col-lg-offset-2">
                     <p>We are considering various projects, such as quadrotors and other fixed-wing aircrafts.  We are also considering amphibious vehicles.  </p>
                     <hr class="featurette-divider">
                     <h2>First Project - Programming an <a href="http://ardrone2.parrot.com/">AR Drone 2.0</a></h2>
@@ -261,9 +322,23 @@
 </section>
 
     <!-- Contact Section -->
-    <section class="container content-section text-center">
+    <section class="container content-section text-center hidden-sm hidden-xs">
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2 scrollpoint sp-effect3">
+                <p>Questions or Concerns?  Reach out to us via the Facebook Group or by Email.  </p>
+                </p>
+                <ul class="list-inline banner-social-buttons">
+                    <li>
+                        <a href="https://facebook.com" class="btn btn-default btn-lg"><i class="fa fa-facebook fa-fw"></i> <span class="network-name">Facebook Group</span></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    
+    <section class="container content-section text-center hidden-md hidden-lg">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2">
                 <p>Questions or Concerns?  Reach out to us via the Facebook Group or by Email.  </p>
                 </p>
                 <ul class="list-inline banner-social-buttons">
