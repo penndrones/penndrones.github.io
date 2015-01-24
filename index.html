@@ -47,7 +47,7 @@
 
 <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
 
-    <!--<div class="loader-wrap">
+    <div class="loader-wrap">
         <div class="loader">
             <div class="box-1 box hidden-sm hidden-xs"></div>
             <div class="box-2 box hidden-sm hidden-xs"></div>
@@ -62,7 +62,7 @@
             <div class="box-5 box hidden-sm hidden-xs"></div>
             <div class="box-6 box hidden-sm hidden-xs"></div>
         </div>
-    </div>-->
+    </div>
     <!-- Navigation -->
     <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
         <div class="container">
@@ -177,11 +177,11 @@
         </div>
 
     <!-- Intro Header -->
-    <header class="intro hidden-sm hidden-xs">
+    <header class="intro hidden-sm hidden-xs" id="skrollr-body">
 
     </header>
     
-    <header class="intro2 hidden-md hidden-lg">
+    <header class="intro2 hidden-md hidden-lg" id="skrollr-body">
         <div class="intro-body">
             <div class="container">
                 <!--<video preload autoplay="true" muted="false" loop="true" id="video">
@@ -206,7 +206,6 @@
             </div>
         </div>
     </header>
-    
     <!--<a class="btn btn-circle" id="mutePress">
                             <i class="fa fa-volume-up animated" id="mutePress2"></i>
                         </a>-->
@@ -371,15 +370,15 @@
     <!-- Plugin JavaScript -->
     <script src="js/jquery.easing.min.js"></script>
     
-    <!--<script type="text/javascript">
+    <script type="text/javascript">
         $(window).load(function() {
             $(".loader-wrap").delay(2000).fadeOut("slow");
         })
-    </script>-->
+    </script>
     
     <script type="text/javascript" src="js/skrollr.min.js"></script>
     
-    <!--<script type="text/javascript">
+    <script type="text/javascript">
 	var s = skrollr.init({
 		edgeStrategy: 'set',
 		easing: {
@@ -389,62 +388,6 @@
 			}
 		}
 	});
-	</script>-->
-
-    <!--<script type="text/javascript">
-	$(function () {
-      // initialize skrollr if the window width is large enough
-      var s = skrollr.init({
-            edgeStrategy: 'set',
-            easing: {
-                WTF: Math.random,
-                inverted: function(p) {
-                    return 1-p;
-                }
-            }
-        });
-
-      // disable skrollr if the window is resized below 768px wide
-      $(window).on('resize', function () {
-        if ($(window).width() <= 767) {
-          skrollr.init().destroy(); // skrollr.init() returns the singleton created above
-        }
-      });
-    });
-	</script>-->
-
-    <script type="text/javascript">
-	$(function () {
-      // initialize skrollr if the window width is large enough
-      if ($(window).width() > 767) {
-        var s = skrollr.init({
-            edgeStrategy: 'set',
-            easing: {
-                WTF: Math.random,
-                inverted: function(p) {
-                    return 1-p;
-                }
-            }
-        });
-      }
-
-      // disable skrollr if the window is resized below 768px wide
-      $(window).on('resize', function () {
-        if ($(window).width() <= 767) {
-          skrollr.init().destroy(); // skrollr.init() returns the singleton created above
-        } else {
-            var s = skrollr.init({
-                edgeStrategy: 'set',
-                easing: {
-                    WTF: Math.random,
-                    inverted: function(p) {
-                        return 1-p;
-                    }
-                }
-            });
-        }
-      });
-    });
 	</script>
     
     <script>
@@ -473,7 +416,7 @@
     });
     </script>-->
     
-    <!--<script>
+    <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
   m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
@@ -482,7 +425,7 @@
   ga('create', 'UA-55588813-1', 'auto');
   ga('send', 'pageview');
 
-</script>-->
+</script>
 
     <!-- Custom Theme JavaScript -->
     <script src="js/grayscale.js"></script>
