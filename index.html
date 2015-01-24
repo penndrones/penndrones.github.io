@@ -391,7 +391,7 @@
 	});
 	</script>-->
 
-    <script type="text/javascript">
+    <!--<script type="text/javascript">
 	$(function () {
       // initialize skrollr if the window width is large enough
       var s = skrollr.init({
@@ -411,9 +411,9 @@
         }
       });
     });
-	</script>
+	</script>-->
 
-    <!--<script type="text/javascript">
+    <script type="text/javascript">
 	$(function () {
       // initialize skrollr if the window width is large enough
       if ($(window).width() > 767) {
@@ -432,10 +432,20 @@
       $(window).on('resize', function () {
         if ($(window).width() <= 767) {
           skrollr.init().destroy(); // skrollr.init() returns the singleton created above
+        } else {
+            var s = skrollr.init({
+                edgeStrategy: 'set',
+                easing: {
+                    WTF: Math.random,
+                    inverted: function(p) {
+                        return 1-p;
+                    }
+                }
+            });
         }
       });
     });
-	</script>-->
+	</script>
     
     <script>
 
